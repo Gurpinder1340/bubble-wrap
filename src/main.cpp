@@ -22,6 +22,19 @@ int main()
             bn::backdrop::set_color(bn::color(0, 0, 31)); // blue
         }
 
+        // Left Button
+        if (bn::keypad::left_pressed())
+        {
+            bn::backdrop::set_color(bn::color(0,31,0));
+
+        }
+
+        // Right Button
+        if (bn::keypad::right_pressed())
+        {
+            bn::backdrop::set_color(bn::color(31,31,0));
+        }
+
         bn::core::update(); 
     }
 }
