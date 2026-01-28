@@ -33,6 +33,14 @@ int main()
         circles.push_back(myCircle2);
     }
 
+    circles[0].set_scale(1.8);
+    circles[1].set_scale(0.5);
+    circles[2].set_scale(2.0);
+    circles[3].set_scale(0.7);
+
+    // Flips the sprite
+    circles[0].set_scale(2.5); 
+
     while (true)
     {
         // A button (X in mGBA)
